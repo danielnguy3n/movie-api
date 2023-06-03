@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDb</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4aa9da21b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="row">
+                <div class="nav__contents">
+                    <div class="logo">
+                        <img src="" alt="">
+                        <h1 class="logo__text">OMDb</h1>
+                    </div>
+                    <ul class="nav__links">
+                        <li><a href="" class="nav__link">Home</a></li>
+                        <li><a href="" class="nav__link">Find a movie</a></li>
+                        <li><a href="" class="nav__link--primary">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="container">
+                <h1 class="browse">Browse our catalogue</h1>
+                <div class="search">
+                    <input class="search__bar" type="text" placeholder="Search by Title" onchange="searchFunction(event)">
+                    <i class="fa-solid fa-magnifying-glass search__icon" onclick="searchButton()"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="results">
+        <div class="row">
+            <div class="results__container">
+                <div class="results__header">
+                    <h1 class="search-results">Trending Movies</h1>
+                    <select id="filter" onchange="filterMovies(event)">
+                        <option value="start" disabled selected>Sort</option>
+                        <option value="NEWEST-OLDEST">Newest to Oldest</option>
+                        <option value="OLDEST-NEWEST">Oldest to Newest</option>
+                    </select>
+                </div>
+                <div class="movie-list">
+                    <!-- <div class="movie">
+                        <figure class="movie__img--wrapper">
+                            <img class="movie__img" src="./assets/poster.jpg" alt="">
+                        </figure>
+                        <h2 class="movie__title">F9</h2>
+                        <p class="movie__year">2019</p>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="movies.js"></script>
+</html>
